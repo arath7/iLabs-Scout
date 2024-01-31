@@ -1,0 +1,77 @@
+.budget-section {
+    font-family: 'Arial', sans-serif;
+    /* Replace with your font choice */
+    color: #333;
+    /* This is a standard dark grey, adjust as needed */
+    max-width: 45vw;
+
+    
+    display: flex;
+    flex-direction: column;
+    /* Vertically align content */
+    justify-content: center;
+}
+
+.top-section {
+    /* Replace with your font choice */
+    color: #333;
+    /* This is a standard dark grey, adjust as needed */
+    max-width: 45vw;
+
+    
+    display: flex;
+    flex-direction: column;
+    /* Vertically align content */
+    justify-content: center;
+}
+
+
+
+.top-section p {
+    font-size: 17px;
+    /* Adjust as needed */
+    line-height: 1.6;
+}
+
+.budget-section p {
+    font-size: 17px;
+    /* Adjust as needed */
+    line-height: 1.6;
+    /* Adjust for readability */
+    margin-bottom: 15px;
+}
+
+
+.budget-section a {
+    display: block;
+    /* Each link is on its own line */
+    color: #000;
+    font-size: 17px;
+    /* Standard link color, adjust as needed */
+    margin-top: 10px;
+    /* Space between links */
+    text-decoration: underline;
+    /* Removes underline from links */
+}
+
+.budget-section a:hover {
+    text-decoration: underline;
+    /* Adds underline on hover */
+}
+
+/* Add media queries for responsiveness if needed */
+@media (max-width: 768px) {
+    .budget-section {
+        padding: 10px;
+    }
+
+    .budget-section h1 {
+        font-size: 20px;
+    }
+
+    .budget-section p,
+    .budget-section .resources h2,
+    .budget-section .barriers h2 {
+        font-size: 16px;
+    }
+}

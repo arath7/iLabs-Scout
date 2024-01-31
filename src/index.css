@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-snap {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%; /* Adjust height as needed */
+}
+
+.section {
+  height: 100vh; /* Adjust height as needed */
+  scroll-snap-align: center;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hover-bold:hover {
+  font-weight: bold;
+}
+
+
+.page {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.flex-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.centered-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  66% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  66% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#page-overlay {
+  -webkit-animation: 1.5s ease 0s normal forwards 1 fadeout;
+  animation: 1.5s ease 0s normal forwards 1 fadeout;
+}
+
+#quick-overlay {
+  -webkit-animation: 2s ease 0s normal forwards 1 fadeout;
+  animation: 2s ease 0s normal forwards 1 fadeout;
+}
+
+#fade-in {
+  -webkit-animation: .75s ease 0s normal forwards 1 fadein;
+  animation: .75s ease 0s normal forwards 1 fadein;
+}
+
+#fade-overlay {
+  -webkit-animation: 0.5s ease 0s normal forwards 1 fadeout;
+  animation: 0.5s ease 0s normal forwards 1 fadeout;
+}
+
+.cursor {
+  cursor: pointer;
+}
